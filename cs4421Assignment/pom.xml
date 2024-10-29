@@ -14,11 +14,7 @@
             <artifactId>javafx-controls</artifactId>
             <version>21</version>  <!-- Adjust the version to your JDK -->
         </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
-            <version>21</version>  <!-- Adjust the version to your JDK -->
-        </dependency>
+
 
         <!-- OSHI Dependency -->
         <dependency>
@@ -26,6 +22,8 @@
             <artifactId>oshi-core</artifactId>
             <version>6.4.0</version> <!-- Or latest stable version -->
         </dependency>
+
+
     </dependencies>
 
     <build>
