@@ -14,20 +14,15 @@
          <children>
             <Button fx:id="home" maxHeight="50.0" maxWidth="75.0" mnemonicParsing="false" onAction="#switchToScene6" prefWidth="100.0" text="Home">
                <HBox.margin>
-                  <Insets left="37.5" top="25.0" />
+                  <Insets left="100.0" top="25.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="pcuHome" maxHeight="50.0" maxWidth="75.0" mnemonicParsing="false" onAction="#switchToScene4" prefWidth="100.0" text="Cpu">
+            <Button fx:id="cpuHome" maxHeight="50.0" maxWidth="75.0" mnemonicParsing="false" onAction="#switchToScene4" prefWidth="100.0" text="Cpu">
                <HBox.margin>
                   <Insets left="37.5" top="25.0" />
                </HBox.margin>
             </Button>
             <Button fx:id="usbHome" maxHeight="50.0" maxWidth="75.0" mnemonicParsing="false" onAction="#switchToScene2" prefWidth="100.0" text="USB">
-               <HBox.margin>
-                  <Insets left="37.5" top="25.0" />
-               </HBox.margin>
-            </Button>
-            <Button fx:id="pciHome" maxHeight="50.0" maxWidth="75.0" mnemonicParsing="false" onAction="#switchToScene5" prefWidth="100.0" text="PCI">
                <HBox.margin>
                   <Insets left="37.5" top="25.0" />
                </HBox.margin>
