@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.team1.SceneController">
+    <items>
+        <AnchorPane maxWidth="150.0" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="75.0">
+            <children>
+                <VBox layoutY="-1.0" prefHeight="400.0" prefWidth="150.0">
+                    <children>
+                        <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="50.0" prefWidth="100.0" text="Back">
+                            <VBox.margin>
+                                <Insets left="25.0" top="14.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#displayCPUInfo" prefHeight="50.0" prefWidth="100.0" text="Display CPU Info" wrapText="true">
+                     <VBox.margin>
+                        <Insets left="25.0" top="14.0" />
+                     </VBox.margin></Button>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <!-- Single TextArea for CPU information display -->
+                <TextArea fx:id="cpuTextArea" layoutX="10.0" layoutY="10.0" prefHeight="180.0" prefWidth="420.0" />
+
+                <!-- LineChart for CPU usage over time with NumberAxis for both axes -->
+                <LineChart fx:id="cpuLineChart" layoutX="10.0" layoutY="204.0" prefHeight="180.0" prefWidth="420.0">
+                    <xAxis>
+                        <NumberAxis label="Time (s)" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis label="CPU Usage (%)" side="LEFT" />
+                    </yAxis>
+                </LineChart>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>
